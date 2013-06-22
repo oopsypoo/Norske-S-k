@@ -218,7 +218,8 @@ WHERE mtype.mtname='topmenu' && menu.mtitle_idmtitle=mtitle.idmtitle && menu.mty
 	  	echo "<div class=\"rmenu_news\">";
 	   $query = "SELECT menuitem.item_name, mtitle.mtitle_text, menuitem.idmenu, mtype.idmtype, menuitem.ptitle
 					FROM menuitem, mtitle, menu, mtype 
-					WHERE mtype.mtname='mnews' && menu.mtitle_idmtitle=mtitle.idmtitle && menu.mtype_idmtype=mtype.idmtype && menuitem.idmenu=menu.menuitem_idmenu";
+					WHERE mtype.mtname='mnews' && menu.mtitle_idmtitle=mtitle.idmtitle && menu.mtype_idmtype=mtype.idmtype && menuitem.idmenu=menu.menuitem_idmenu
+					ORDER by menuitem.item_name ASC";
 	 	$result = mysql_query($query, $mysql_connection);
 	 	$row = mysql_fetch_row($result);
 	   echo $row[1]; 
