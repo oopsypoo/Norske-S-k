@@ -1,0 +1,580 @@
+
+.bckgrnd1 {
+	background-color: #FFF;
+	border-top-width: 2px;
+	border-left-width: 2px;
+	border-top-style: groove;
+	border-left-style: groove;
+	border-top-color: #06F;
+	border-left-color: #06F;
+	margin: 0 auto;
+	height: 2800px; 
+	width: 990px;
+	z-index: -1;
+	position: static;
+}
+#toplogo {
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-right-style: groove;
+	border-bottom-style: groove;
+	border-right-color: #0FC;
+	border-bottom-color: #0FC;
+	height: 50px;
+	width: 200px;
+	margin-top: 10px;
+	margin-left: 10px;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 36px;
+	text-decoration: underline;
+	border-bottom-right-radius:1em;
+	text-align:center;
+	
+}
+
+#toppic {
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 2px;
+	border-top-width: 2px;
+	border-right-style: groove;
+	border-bottom-style: groove;
+	border-left-style: groove;
+	border-top-style: groove;
+	border-right-color: #0FC;
+	border-bottom-color: #0FC;
+	border-left-color: #0FC;
+	border-top-color: #0FC;
+	height: 130px;
+	width: 520px;
+	margin-top: -50px;
+	margin-left: 230px;
+	border-bottom-right-radius:4em;
+	border-bottom-left-radius:4em;
+	border-top-right-radius:4em;
+	border-top-left-radius:4em;
+	text-align:center;
+	background-image:url('../pics/topp_bilde.gif');
+	background-repeat:no-repeat;
+	background-position:left top;
+}
+.bckgrnd_main {
+	border-right-width: 2px;
+	border-left-width: 2px;
+	border-right-style: groove;
+	border-left-style: groove;
+	border-right-color: #0F9;
+	border-left-color: #0F9;
+	 
+	left: 270px;
+	margin: 0 auto;
+	margin-top: 155px;
+	width: 520px;
+	height: auto;
+	text-indent: 30px;
+}
+.topmenupos
+{
+      margin-left:235px; 
+		width: 522px;
+		height: 25px;
+		margin-top: 130px;
+		
+		text-decoration:none;
+      color:white;
+      background-color:#FFF;
+      border-bottom-width:thin;
+		border-bottom-color:#060;
+		border-bottom-style:groove;
+		position: absolute;
+}
+
+.top_menu:hover
+{
+        background-color: #9FC;
+        color: #000;
+        /* CSS3 standard */
+        opacity:1;
+}
+
+.top_menu {
+	float:left;
+   width: 128px;
+	border-top-width:thin;
+	border-top-color:#060;
+	border-top-style:groove;
+	border-top-left-radius:2em;
+	border-top-right-radius:2em;
+	border-left-width:thin;
+	border-left-color:#060;
+	border-left-style:groove;
+	border-right-width:thin;
+	border-right-color:#060;
+	border-right-style:groove;
+	
+	text-align:center;
+}
+
+.list-menu-horz
+{
+        display:inline;
+}
+ul.menu {
+	background-color: #FFF;
+}
+
+ul.menu li:hover {
+ background-color: #9FC;
+}
+
+.menu-horz-ul
+{
+        float:left;
+        width:100%;
+        padding:0;
+        margin:0;
+        list-style-type:none;
+}
+
+.search_result {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	border-top-width: 2px;
+	border-right-width: 2px;
+	border-left-width: 2px;
+	border-top-style: dotted;
+	border-right-style: dotted;
+	border-left-style: dotted;
+	border-top-color: #09C;
+	border-right-color: #09C;
+	border-left-color: #09C;
+	font-size: 12px;
+/*	position: absolute;*/
+	margin-top: 80px;
+	width: 486px;
+	left: 807px;
+	top: 100px;
+	height: auto;
+}
+
+.centrate {
+	margin-left:60px;
+	
+}
+/* Dette er søkeverktøy-menyen på venstre side */
+.left_menu {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: normal;
+	text-transform: none;
+	color: #000;
+	text-decoration: none;
+	border-right-width: 2px;
+	border-right-style: groove;
+	border-right-color: #0FC;
+	height: auto;
+	width: 200px;
+	margin-top: 155px;
+	margin-left: 10px;
+	text-align: left;
+	list-style-type: square;
+	list-style-position: outside;
+	text-indent: 20px;
+	float: left;
+	position: absolute;
+}
+
+/* Dette er konverterings-menyen på venstre side */
+.left_menu_konv {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: normal;
+	text-transform: none;
+	color: #000;
+	text-decoration: none;
+	border-right-width: 2px;
+	border-right-style: groove;
+	border-right-color: #0FC;
+	height: auto;
+	width: 200px;
+	margin-top: 350px;
+	margin-left: 10px;
+	text-align: left;
+	list-style-type: square;
+	list-style-position: outside;
+	text-indent: 20px;
+	float: left;
+	position: absolute;
+}
+/* Dette er konverterings-menyen på venstre side */
+.left_menu_tabell {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: normal;
+	text-transform: none;
+	color: #000;
+	text-decoration: none;
+	border-right-width: 2px;
+	border-right-style: groove;
+	border-right-color: #0FC;
+	height: auto;
+	width: 200px;
+	margin-top: 550px;
+	margin-left: 10px;
+	text-align: left;
+	list-style-type: square;
+	list-style-position: outside;
+	text-indent: 20px;
+	float: left;
+	position: absolute;
+}
+.msg_error {
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 14px;
+	font-style: italic;
+	color: #F00;
+}
+
+.table_header {
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 12px;
+	font-style:normal;
+	font-weight: bold;
+	background-color:#999;
+/*	width: 486px;*/
+	border:thin;
+}
+.table_header_result {
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 12px;
+	font-style:normal;
+	font-weight: bold;
+	background-color:#999;
+	width: 325px;
+	border:thin;
+}
+
+.table_row1 {
+	font-family:"Times New Roman", Times, serif;
+	font-size:11px;
+	background-color: #CCC;
+	font-weight: normal;
+}
+
+.table_row2 {
+	font-family:"Times New Roman", Times, serif;
+	font-size:11px;
+	background-color: #FFF;
+	font-weight: normal;
+}
+
+.table_date {
+	font-family:"Times New Roman", Times, serif;
+	font-size:9px;
+}
+/* lager en mørkere rad...legger inn siden nedlastet side 
+fra Norske Bank bruker en klasse som heter dette.
+Fargen her blir da grå.   */
+.tableRowDark
+{
+	background-color: #CCC;
+}
+
+.btn_style {
+	height: 25px; 
+	width: 100px; 
+	color: green; 
+	background-color:#ffddbbee;
+}
+
+.table_enheter {
+	width: 100%;
+}
+
+.tabeller {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 12px;
+	font-style:normal;
+	width: 100%;
+	border:thin;
+	border-color: #000000;
+}
+.tab_row1 {
+	font-family:"Times New Roman", Times, serif;
+	font-size:12px;
+	text-align: center;
+	background-color: #CCC;
+	font-weight: normal;
+}
+
+.tab_row2 {
+	font-family:"Times New Roman", Times, serif;
+	text-align: center;
+	font-size:12px;
+	background-color: #FFF;
+	font-weight: normal;
+}
+.table_valuta_header {
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 12px;
+	font-style:normal;
+	font-weight: bold;
+	background-color:#999;
+	text-align: center;
+/*	width: 486px;*/
+	border:thin;
+}
+.tab_row1_dict {
+	font-family:"Times New Roman", Times, serif;
+	font-size:12px;
+	text-align: left;
+	background-color: #CCC;
+	font-weight: normal;
+}
+
+.tab_row2_dict {
+	font-family:"Times New Roman", Times, serif;
+	text-align: left;
+	font-size:12px;
+	background-color: #FFF;
+	font-weight: normal;
+}
+#map_container
+{
+	z-index: 10;
+}
+#map_canvas
+{
+	width: 95%; 
+	height: 480px;
+	
+	border-width: 4px;
+	border-style: groove;
+	border-color: #0F9;
+	
+}
+/* these are class-names sed/imported from the free online dictionary */ 
+
+.illustration
+{
+	margin-left: 10px;
+	text-align: left;
+	font-weight: normal;
+	font-style: italic;
+	color: #30F;
+	font-size:12px;
+}
+
+.thstyle
+{
+	background-color: #060;
+}
+
+/* artikkel tabell */
+.artikkel_header
+{
+	font-family: "Times New Roman", Times, serif;
+	font-size: 16px;
+	font-style:normal;
+	background-color: #80D880;
+}
+.artikkel_info
+{
+	font-family:"Times New Roman", Times, serif;
+	font-size:9px;
+	background-color: #E5E5E5;
+}
+.tartikkel
+{
+	font-family: "Times New Roman", Times, serif;
+	font-size: 13px;
+	font-style:normal;
+	width: 100%;
+	border:thin;
+	border-color: #000000;
+	
+}
+
+
+/* yr.php - varsel ting */
+
+#yr-varsel
+{
+	font-family: "Times New Roman", Times, serif;
+	font-size: 12px;
+	font-style:normal;
+}
+/* brukt i tabellen skrevet t av yr.no */
+.v
+{
+	
+}
+.vo
+{
+	background-color: #66C3F5;
+}
+.pluss
+{
+	background-color: #B4E5F5;
+}
+.skilje
+{
+	border-bottom-width: 2px;
+	border-bottom-style: groove;
+	border-bottom-color: #000;
+}
+/* Ny v�rvarsel-klassser for det nye skriptet */
+/*klasse for hovedtabell*/
+.table_class_vaervarsel
+{
+	font-size: 13px;
+	font-family: "Times New Roman", Times, serif;
+	border-width: 1px;
+	border-color: #FFFFFF;
+	width: 100%; 
+}
+/*klasse for soloppgang-del av tabell*/
+.tr_soloppgang
+{
+	background-color: #F1F18F;
+}
+/* klasse for seperator i tabell (en hel tr)*/
+.tr_seperator
+{
+	background-color: #7F7F7F;
+}
+
+/* klasse for tr-overskrift */
+.tr_vaervarsel
+{
+	background-color: #7272ED;
+}
+/* de neste to klassene alternerer mellom hverandre i tabellen */
+/* klasse for f�rste rad i v�r-data-tabellen */
+.second_row_class
+{
+	background-color: #A4FCFF;
+}
+/* klasse for andre rad i v�r-data-tabellen */
+.first_row_class
+{
+	background-color: #D2D2FF;
+}
+
+.rmenu_news 
+{
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: normal;
+	text-transform: none;
+	color: #000;
+	text-decoration: none;
+	border-right-width: 2px;
+	border-right-style: groove;
+	border-right-color: #0FC;
+	border-left-width: 2px;
+	border-left-style: groove;
+	border-left-color: #0FC;
+	height: auto;
+	width: 200px;
+	margin-top: 370px;
+	margin-left: 770px;
+	text-align: left;
+	list-style-type: square;
+	list-style-position: outside;
+	text-indent: 5px;
+	position: absolute;
+}
+
+.minkommune
+{
+	border-right-width: 2px;
+	border-right-style: groove;
+	border-right-color: #0FC;
+	border-left-width: 2px;
+	border-left-style: groove;
+	border-left-color: #0FC;
+	height: auto;
+	width: 200px;
+	margin-top: 155px;
+	margin-left: 770px;
+	text-align: left;
+	text-indent: 5px;
+	position: absolute;
+}
+#id_postnummer
+{
+	width: 95%;
+	height: 15px;
+	border-color: #FF0000;
+	background-color: #90EE90;
+}
+#id_poststed
+{
+	width: 95%;
+	height: 15px;
+	border-color: #0000FF;
+	background-color: #90EE90;
+}
+#id_velg_fylke
+{
+	width: 95%;
+	height: 20px;
+	border-color: #0000FF;
+	background-color: #90EE90;
+}
+#id_velg_kommune
+{
+	width: 95%;
+	height: 20px;
+	border-color: #0000FF;
+	background-color: #E6E6FA;
+}
+#id_velg_poststed
+{
+	width: 95%;
+	height: 20px;
+	border-color: #0000FF;
+	background-color: #E5E5E5;
+}
+#id_finn_poststed
+{
+	width: 95%;
+	height: 20px;
+	border-color: #0000FF;
+	background-color: #FFD5FF;
+}
+#id_flere_poststeder
+{
+	width: 95%;
+	height: 20px;
+	border-color: #0000FF;
+	background-color: #E5E5E5;
+}
+#id_flere_kommuner
+{
+	width: 95%;
+	height: 20px;
+	border-color: #0000FF;
+	background-color: #E6E6FA;
+}
+#idaviser
+{
+	width: 95%;
+	height: 20px;
+	border-color: #000000;
+	background-color: #FFFFFF;
+}
+.andre_poststeder
+{
+	border-color: #0000FF;
+	background-color: #E5E5E5;
+}
+.andre_kommuner
+{
+	border-color: #0000FF;
+	background-color: #E6E6FA;
+}
