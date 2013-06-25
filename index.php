@@ -124,7 +124,7 @@ body {
 	include 'nscfg.php';
 	include 'nsodb.php';
 	mysql_set_charset($todays_charset, $mysql_connection);
-	$query = "SELECT menuitem.item_name, mtitle.mtitle_text, menuitem.idmenu, mtype.idmtype, menuitem.ptitle
+	$query = "SELECT menuitem.item_name, mtitle.mtitle_text, menuitem.idmenu, mtype.idmtype, menuitem.ptitle, menuitem.bActive
 				FROM menuitem, mtitle, menu, mtype 
 				WHERE mtype.mtname='msearch' && menu.mtitle_idmtitle=mtitle.idmtitle && menu.mtype_idmtype=mtype.idmtype && menuitem.idmenu=menu.menuitem_idmenu";
  		$result = mysql_query($query, $mysql_connection);
@@ -135,6 +135,7 @@ body {
     echo "<ul class=\"menu\">";
     while($row)
     {
+      if($row[5] == 1)
     	echo "<li><a href=\"index.php?mtype=".$row[3]."&"."menuitem"."=".$row[2]."\" title=\"".$row[4]."\">".$row[0]."</a></li>"; 
 		$row = mysql_fetch_row($result);
     }
