@@ -1,0 +1,10 @@
+#Ignore config-files/db-open and so on
+closedb.php
+config.php
+nscdb.php
+nscfg.php
+nsodb.php
+opendb.php
+wnconfig.php
+#ignore all kdev-project-files
+*.kdev4
