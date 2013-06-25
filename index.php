@@ -66,12 +66,13 @@
  		 	echo "<meta name=\"description\" content=\"".$row[1]."\" />";
  		 	echo "<meta name=\"keywords\" content=\"".$row[2]."\" />";
 			echo "<title>".$row[0]."</title>";
-			if($menuitem == 6) // if posten we want to load the google map api's and other stuff..
+//api-keys are old and outdated. Disable for now
+/*			if($menuitem == 6) // if posten we want to load the google map api's and other stuff..
 			{
 				echo "<script src=\"http://maps.googleapis.com/maps/api/js?v=3&amp;lang=no&amp;sensor=false&amp;key=ABQIAAAAWafN0cFdZdY7toV0Kkx_6hT_G3qCK4TGByXw74x9_IP7DnMe_hQCscdTxDzmeU3vru4U9s9CoR6lWQ\" type=\"text/javascript\"></script>\n";
 				echo "<script type=\"text/javascript\" src=\"skript/gmap.js\"></script>\n";
 			}
-			echo "<script language=\"javascript\"><!--\n";
+*/			echo "<script language=\"javascript\"><!--\n";
 			echo "	function postSubmit()
 						{
 							document.postnummer.submit();
