@@ -316,19 +316,15 @@
 							write_sql_options($sql_options, "id_flere_kommuner", "flere_kommuner", NULL, NULL);
 			$name = conv_url_kommunenavn(utf8_decode($valgt_kommune));
 			$url = "http://www.".$name.".kommune.no";
-			$sql_aviser = "select avis.idavis, avis.navn, avis.url from avis, fylke
+			$sql_aviser = "select avis.idavis, avis.navn, avis.url, fylke.webadr from avis, fylke
 								where fylke.fnavn='$valgt_fylke' && fylke.idfylke=avis.fylke_idfylke order by avis.navn";
 			echo "</td>
 						</tr>
 						<tr>
 							<td class=\"andre_poststeder\" colspan=\"3\">$valgt_kommune sitt nettsted: </td>
 							<td class=\"andre_poststeder\" colspan=\"4\"><a href=\"$url\" target=\"_blank\">".ucfirst(strtolower($valgt_kommune))." kommune</a></td>
-						</tr>
-						<tr>
-							<td class=\"andre_kommuner\" colspan=\"3\">Lokalaviser i $valgt_fylke: </td>
-							<td colspan=\"4\">";
-			if(!$row)
-									break;
+						</tr>";
+			
 						$result = mysql_query($sql_aviser, $conn);
 						if(!$result)
 						{
@@ -337,6 +333,14 @@
 							exit();
 						}
 						$row = mysql_fetch_row($result);
+			echo "			<tr>
+							<td class=\"andre_poststeder\" colspan=\"7\"><a target=\"_blank\" href=\"$row[3]\">$valgt_fylke fylkeskommune sitt nettsted</a> </td>
+						//	<td class=\"andre_poststeder\" colspan=\"4\"></td>
+						</tr>
+						<tr>
+							<td class=\"andre_kommuner\" colspan=\"3\">Lokalaviser i $valgt_fylke: </td>
+							<td colspan=\"4\">";
+			
 						echo "<select id=\"idaviser\" name=\"navnavis\" onChange=\"openNew(this.options[this.selectedIndex].value)\">\n";
 						echo "<option value=\"Velg en Avis\">Velg en Avis</option>";
 					  	if($row)

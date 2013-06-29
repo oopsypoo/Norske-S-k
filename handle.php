@@ -65,7 +65,7 @@
 				$link = "http://norskesøk.no/check.php?idforslag=";
 				$full_link = $link.$random_string;
 				$message = "Vær vennlig å klikk på linken nedenfor: \n".$full_link."\nMvh,\nnorskesøk.no";
-				$headers = 'From: webmaster@itree.no' . "\r\n" .
+				$headers = 'From: webmaster@xn--norskesk-c5a.no' . "\r\n" .
 						'Reply-To: frode.meek@gmail.com' . "\r\n" .
 						'X-Mailer: PHP/' . phpversion();
 				

@@ -56,7 +56,7 @@
 					$kdesc = $kdesc;
 				else 
 					$kdesc = utf8_encode($kdesc);
-				echo "<br /><h3><a href=\"$olink\">".$overskrift."</a></h3>".$kdesc."\n";
+				echo "<br /><h3><a target=\"_blank\" href=\"$olink\">".$overskrift."</a></h3>".$kdesc."\n";
 				$items = $html->find('item');
 				foreach($items as $item)
 				{
@@ -78,7 +78,7 @@
 
 					
 					
-					$html2 .= "<p><a href=\"$link\" title=\"$tittel\">$tittel</a><br />".
+					$html2 .= "<p><a target=\"_blank\" href=\"$link\" title=\"$tittel\">$tittel</a><br />".
 									strip_cdata($desc)."<br />$pubDato<br /></p>";
 				}
 				if(isset($html2))
